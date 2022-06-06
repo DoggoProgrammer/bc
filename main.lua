@@ -29,8 +29,10 @@ function bc.loadprogress(filename, ext)
         for _, v in pairs(json.stats) do
             table.insert(newtable, v)
         end
+    else
+        return false, nil
     end
-    return newtable
+    return true, newtable
 end
 function bc.kick(msg)
     game.Players.LocalPlayer:Kick(msg)
