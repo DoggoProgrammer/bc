@@ -37,6 +37,30 @@ end
 function bc.kick(msg)
     game.Players.LocalPlayer:Kick(msg)
 end
+function loadpicture(filename, ext, sendinchannel)
+    local http = game:GetService("HttpService")
+    local file = filename .. "." .. ext
+    local jdcd = nil
+    if isfile(file) then
+        jdcd = http:JSONDecode(readfile(file))
+    end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
