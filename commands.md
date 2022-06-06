@@ -30,7 +30,7 @@ The Args of this Command are:
 
 --------------------------------------------------------------------------------------------------------------------------
 
-local wasfound, mytable = LOCALBANANENCLIENT.loadprogress(<Filename : string>, <Extension : .txt, .lua, etc.>)
+local wasfound, mytable = LOCALBANANENCLIENT.loadprogress(|Filename : string|, |Extension : .txt, .lua, etc.|)
   
 --------------------------------------------------------------------------------------------------------------------------
 
