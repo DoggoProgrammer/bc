@@ -9,7 +9,7 @@ The Args of this Command are:
 
 --------------------------------------------------------------------------------------------------------------------------
 
-LOCALBANANENCLIENT.saveprogress(<Filename : string>, <Table : table>, <Overwrite : bool>, <Extension : .txt, .lua, etc.>)
+LOCALBANANENCLIENT.saveprogress( <Filename : string> , <Table : table> , <Overwrite : bool> , <Extension : .txt, .lua, etc.>)
   
 --------------------------------------------------------------------------------------------------------------------------
   
