@@ -110,7 +110,7 @@ Libraryholder.Size = UDim2.new(0, 623, 0, 255)
 Libraryholder.ScrollBarThickness = 3
 
 Librarytemp.Name = "Library"
-Librarytemp.Parent = Libraryholder
+Librarytemp.Parent = game:GetService("ReplicatedStorage")
 Librarytemp.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Librarytemp.BorderColor3 = Color3.fromRGB(25, 25, 25)
 Librarytemp.Position = UDim2.new(-0.7, 0, 0.158, 0)
@@ -169,6 +169,15 @@ if game:HttpGet("https://raw.githubusercontent.com/DoggoProgrammer/bc/main/libra
     Title_3.Text = "❌ Cannot load librarys; cannot start script."
 else
     Title_3.Text = "↻ 1. Loading Librarys..."
+    local http = game:GetService("HttpService")
+    local json = http:JSONDecode(game:HttpGet("https://raw.githubusercontent.com/DoggoProgrammer/bc/main/librarystuff/librarys.json"))
+    for _, v in pairs(json.librarys) do
+        local temp = Librarytemp:Clone()
+        temp.Parent = Libraryholder
+        temp.Text = v
+        print("Library", v, "loaded!")
+    end
+    print("All Librarys are loaded!")
 end
 Librarysbtn.MouseButton1Click:Connect(function()
     Librarys:TweenPosition(UDim2.new(0, 632, 0, 310), "Out", "Linear", 0.5)
