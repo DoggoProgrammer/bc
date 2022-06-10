@@ -167,6 +167,8 @@ Title_3.TextXAlignment = Enum.TextXAlignment.Left
 Title_3.TextYAlignment = Enum.TextYAlignment.Top
 if game:HttpGet("https://raw.githubusercontent.com/DoggoProgrammer/bc/main/librarystuff/librarys.json") ~= "nil" then
     Title_3.Text = "❌ Cannot load librarys; cannot start script."
+else
+    Title_3.Text = "↻ 1. Loading Librarys..."
 end
 Librarysbtn.MouseButton1Click:Connect(function()
     Librarys:TweenPosition(UDim2.new(0, 632, 0, 310), "Out", "Linear", 0.5)
