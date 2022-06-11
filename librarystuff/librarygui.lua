@@ -373,6 +373,9 @@ else
                 local newlibrary = BananenClientReplicatedStorage.Librarytemp:Clone()
                 newlibrary.Parent = Librarysholder
                 newlibrary.Libraryname.Text = v
+                newlibrary.Delete.MouseButton1Click:Connect(function()
+                     newlibrary:Destroy()
+                end)
             end
         end)
         print("Library", v, "loaded!")
@@ -391,4 +394,14 @@ end)
 Codebackbtn.MouseButton1Click:Connect(function()
     Librarys:TweenPosition(UDim2.new(-0.7, 0, 0.158, 0), "Out", "Linear", 0.5)
 end)
+Librarystocode.MouseButton1Click:Connect(function()
+     local output = "local bananenclient = loadstring(game:HttpGet('https://raw.githubusercontent.com/DoggoProgrammer/bc/main/main.lua'))"
+     for _, v in pairs(Librarysholder:GetChildren()) do
+          if v:IsA("Frame") then
+              output = output .. ";bananenclient." .. v.Libraryname.Text .. "()"
+          end
+     end)
+     Codetext.Text = output
+end)
+print("BananenClient GUI Version 1.0")
 -- https://www.paste.sh/Xv0UF26N#R4KyBU6CYUCMZhvGbt2q5C8v
