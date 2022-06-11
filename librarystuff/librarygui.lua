@@ -44,7 +44,7 @@ BananenClientReplicatedStorage.Parent = game:GetService("ReplicatedStorage")
 BananenClientReplicatedStorage.Name = "BananenClient"
 
 Bananenclient.Name = "Bananenclient"
-Bananenclient.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Bananenclient.Parent = game.CoreGui
 
 Start.Name = "Start"
 Start.Parent = Bananenclient
