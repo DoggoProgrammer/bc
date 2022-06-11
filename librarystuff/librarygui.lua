@@ -76,10 +76,10 @@ Librarys.Size = UDim2.new(0, 632, 0, 310)
 Librarys.Visible = false
 
 UICorner_3.CornerRadius = UDim.new(0, 16)
-UICorner_3.Parent = Librarys_2
+UICorner_3.Parent = Librarys
 
 Title_2.Name = "Title"
-Title_2.Parent = Librarys_2
+Title_2.Parent = Librarys
 Title_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Title_2.BackgroundTransparency = 1.000
 Title_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
@@ -93,14 +93,14 @@ Title_2.TextSize = 16.000
 Title_2.TextWrapped = true
 
 Border_2.Name = "Border"
-Border_2.Parent = Librarys_2
+Border_2.Parent = Librarys
 Border_2.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
 Border_2.BorderColor3 = Color3.fromRGB(100, 100, 100)
 Border_2.Position = UDim2.new(0.00632911408, 0, 0.100000001, 0)
 Border_2.Size = UDim2.new(0, 623, 0, 0)
 
 Libraryholder.Name = "Libraryholder"
-Libraryholder.Parent = Librarys_2
+Libraryholder.Parent = Librarys
 Libraryholder.Active = true
 Libraryholder.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Libraryholder.BackgroundTransparency = 1.000
@@ -121,7 +121,7 @@ Librarytemp.TextColor3 = Color3.fromRGB(255, 255, 255)
 Librarytemp.TextSize = 30.000
 Librarytemp.TextWrapped = true
 
-UICorner_4.Parent = Library
+UICorner_4.Parent = Librarysbtn
 
 UIGridLayout.Parent = Libraryholder
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -185,3 +185,4 @@ end)
 Back.MouseButton1Click:Connect(function()
     Librarys:TweenPosition(UDim2.new(-0.7, 0, 0.158, 0), "Out", "Linear", 0.5)
 end)
+-- https://www.paste.sh/Xv0UF26N#R4KyBU6CYUCMZhvGbt2q5C8v
