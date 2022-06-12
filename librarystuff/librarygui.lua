@@ -358,7 +358,7 @@ Codebackbtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 Codebackbtn.TextScaled = true
 Codebackbtn.TextSize = 16.000
 Codebackbtn.TextWrapped = true
-if game:HttpGet("https://raw.githubusercontent.com/DoggoProgrammer/bc/main/librarystuff/librarys.json") ~= "nil" then
+if game:HttpGet("https://raw.githubusercontent.com/DoggoProgrammer/bc/main/librarystuff/librarys.json") == "nil" then
     game.Players.LocalPlayer:Kick("❌ Cannot load librarys; cannot start script.")
 else
     Title_3.Text = "↻ 1. Loading Librarys..."
@@ -400,7 +400,7 @@ Librarystocode.MouseButton1Click:Connect(function()
           if v:IsA("Frame") then
               output = output .. ";bananenclient." .. v.Libraryname.Text .. "()"
           end
-     end)
+     end
      Codetext.Text = output
 end)
 print("BananenClient GUI Version 1.0")
